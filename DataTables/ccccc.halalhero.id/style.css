@@ -1,0 +1,85 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+}
+
+/* .responsive {
+    width: 300px;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+  } */
+
+tr,
+td {
+  color: white;
+}
+
+tr,
+td:hover {
+  color: white;
+}
+
+a {
+  color: white;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #66cc66;
+}
+
+body {
+  height: 145vh;
+}
+.bg-custom {
+  background-color: #9b1f15;
+}
+
+/* Responsif pada layar dengan lebar 765px */
+@media (max-width: 765px) {
+  .offset-md-3 {
+    margin-left: 0 !important;
+  }
+  .col-md-6 {
+    width: 100% !important;
+  }
+  #mytable {
+    font-size: 0.8rem;
+  }
+}
+
+@media screen and (max-width: 375px) {
+  table,
+  thead,
+  tbody,
+  th,
+  td,
+  tr {
+    display: block;
+  }
+
+  td {
+    position: relative;
+    padding-left: 50%;
+    text-align: left;
+  }
+
+  td:before {
+    position: absolute;
+    top: 0;
+    left: 6px;
+    width: 45%;
+    padding-right: 10px;
+    white-space: nowrap;
+    content: attr(data-label);
+    text-align: left;
+    font-weight: bold;
+  }
+}
