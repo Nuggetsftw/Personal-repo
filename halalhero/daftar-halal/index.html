@@ -1,0 +1,321 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!----======== CSS ======== -->
+    <link rel="stylesheet" href="style2.css">
+     
+    <!----===== Iconscout CSS ===== -->
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
+
+     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+    <title>UMKM Form Into Halal World!! - Halalhero.id</title> 
+</head>
+<body>
+
+
+    <div class="container">
+        <header>UMKM Form - Halalhero.id</header> <br>
+
+        <form id="uploadForm" action="https://script.google.com/macros/s/AKfycby5pUYGy182rHrp6P6b0V_MmkhlvxL_OSTk47D9oBoF4rYVJVEWIg-bOAHnNYcZuFUd/exec" method="POST">
+            <input type="hidden" value="" name="fileContent" id="fileContent">
+          <input type="hidden" value="" name="filename" id="filename">
+            <div class="form first">
+                <div class="details personal">
+                    <!-- <span class="title">halalhero.id</span> -->
+
+                    <div class="fields">
+                         <div class="input-field">
+                            <label for="Pernyataan UMKM" class="form-label" style="font-size: 15px;">1. Pernyataan persetujuan UMKM untuk mengisi form halal, apakah UMKM bersedia mengisi formulir ?</label>
+                            <select class="form-control" id="Pernyataan UMKM" name="Pernyataan UMKM" required>
+                                <option disabled selected>Pilih Opsi</option>
+                                <option>Setuju</option>
+                                <option>Tidak Setuju</option>
+                            </select>
+                         </div>
+
+                        <div class="input-field">
+                            <label for="Email UMKM" class="form-label" style="font-size: 14px;">2. Email aktif anda, jika tidak punya email ketik " tidak punya email "</label>
+
+                            <input type="text" id="Email UMKM" class="form-control" name="Email UMKM" placeholder="Ex. Suprianto@gmail.com" required>
+                        </div>
+
+                        <div class="input-field">
+                            <label for="KTP UMKM" class="form-label" style="font-size: 14px;">3. Nama anda sesuai KTP</label>
+
+                            <input type="text" id="KTP UMKM" class="form-control" name="KTP UMKM" placeholder="Ex. Jose Morinho" required>
+                        </div>
+
+                        <div class="input-field">
+                            <label for="TEMPAT TANGGAL LAHIR KTP" class="form-label" style="font-size: 14px;">4. Tempat Tanggal Lahir sesuai KTP</label>
+
+                            <input type="text" id="TEMPAT TANGGAL LAHIR KTP" class="form-control" name="TEMPAT TANGGAL LAHIR KTP" placeholder="Tempat dan Tanggal Tulis juga disini" required>
+                            <input type="date" id="TEMPAT TANGGAL LAHIR KTP" name="TEMPAT TANGGAL LAHIR KTP" class="form-control" placeholder="Tanggal Lahir" required>
+                        </div>
+
+                        <div class="input-field">
+                            <label for="NIK UMKM" class="form-label" style="font-size: 14px;">5. NIK sesuai KTP</label>
+
+                            <input type="number" id="NIK UMKM" class="form-control" name="NIK UMKM" placeholder="Ex. 3171xxxxxxxx" required>
+                        </div>
+
+
+
+                        <div class="input-field">
+                            <label for="FOTO KTP" class="form-label" style="font-size: 14px;">6. Upload Foto KTP UMKM</label>
+
+                             <input type="file" required id="attach" class="form-control" name="FOTO KTP">              
+
+                            <!-- <div id="selectedBanner"></div> -->
+                        </div>
+                    </div>
+                </div>
+
+                <div class="details ID">
+                    <!-- <span class="title">Identity Details</span> -->
+
+                    <div class="fields">
+                        <div class="input-field">
+                            <label for="FOTO TTD" class="form-label" style="font-size: 14px;">7. Upload Foto TTD anda, ttd di kertas putih lalu di foto dan di upload disini</label>
+
+                           <input type="file" required id="attach" class="form-control" name="FOTO TTD">    
+                            <div id="selectedBanner"></div>
+                        </div>
+
+                        <div class="input-field">
+                            <label for="ALAMAT UMKM" class="form-label" style="font-size: 14px;">8. Alamat sesuai KTP beserta kode pos</label>
+
+                            <input type="text" id="ALAMAT UMKM" class="form-control" name="ALAMAT UMKM" placeholder="Ex. Johar Baru 10560" required>
+                        </div>
+
+                        <div class="input-field">
+                            <label for="KABUPATEN KTP" class="form-label" style="font-size: 14px;">9. Kabupaten / Kota sesuai KTP</label>
+
+                            <input type="text" id="KABUPATEN KTP" class="form-control" name="KABUPATEN KTP"  placeholder="Ex. Jakarta Pusat" required>
+                        </div>
+
+                        <div class="input-field">
+                            <label for="KELURAHAN KTP" class="form-label" style="font-size: 14px;">10. Kelurahan sesuai KTP</label>
+
+                            <input type="text" id="KELURAHAN KTP" class="form-control" name="KELURAHAN KTP" placeholder="Ex. Johar Baru" required>
+                        </div>
+
+                        <div class="input-field">
+                            <label for="NO WA UMKM" class="form-label" style="font-size: 14px;">11. No Whatsapp anda yang aktif *</label>
+
+                            <!-- <input type="date" placeholder="Ex. 0813xxxxxxxx" required> -->
+                            <input type="text" id="NO WA UMKM" class="form-control" name="NO WA UMKM" placeholder="Ex. 0813xxxxxxxx" required>
+                        </div>
+
+                        <div class="input-field">
+                            <label for="USAHA UMKM" class="form-label" style="font-size: 14px;">12. Nama Usaha Anda</label>
+
+                            <input type="text" id="USAHA UMKM" class="form-control" name="USAHA UMKM" placeholder="Ex. Pisang Crunchy Dani" required>
+                        </div>
+                    </div>
+
+                    <button class="nextBtn">
+                        <span class="btnText">Berikutnya</span>
+                        <i class="uil uil-navigator"></i>
+                    </button>
+                </div>
+
+                <p><strong>Undang-Undang Nomor 33 Tahun 2014 tentang Jaminan Produk Halal, telah diubah dengan Undang-undang Nomor 11 Tahun 2020 tentang Cipta Kerja, dimana dalam Pasal-Pasal yang diubah ada menyisipkan Pasal yang mewajibkan pelaku usaha mikro dan kecil untuk memiliki sertifikat halal bagi produk olahannya</strong> <br><br>
+
+                يٰٓاَيُّهَا النَّاسُ كُلُوْا مِمَّا فِى الْاَرْضِ حَلٰلًا طَيِّبًا ۖوَّلَا تَتَّبِعُوْا خُطُوٰتِ الشَّيْطٰنِۗ اِنَّهٗ لَكُمْ عَدُوٌّ مُّبِيْنٌ
+    
+                168. Wahai manusia! Makanlah dari (makanan) yang halal dan baik yang terdapat di bumi, dan janganlah kamu mengikuti langkah-langkah setan. Sungguh, setan itu musuh yang nyata bagimu
+
+                Maka para UMKM wajib memiliki sertifikasi halal untuk produknya</p>
+            </div>
+
+            <div class="form second">
+                <div class="details address">
+                    <!-- <span class="title">Address Details</span> -->
+
+                    <div class="fields">
+                        <div class="input-field">
+                            <label for="NO NPWP UMKM" class="form-label" style="font-size: 14px;">13. Nomor NPWP anda</label>
+
+                            <input type="text" id="NO NPWP UMKM" class="form-control" name="NO NPWP UMKM" placeholder="Ex. 01.000.000.0-000.000" required>
+                        </div>
+
+                        <div class="input-field">
+                            <label for="ALAMAT USAHA UMKM" class="form-label" style="font-size: 14px;">14. Alamat lokasi usaha anda</label>
+
+                            <input type="text" id="ALAMAT USAHA UMKM" class="form-control" name="ALAMAT USAHA UMKM" placeholder="isi alamat asli" required>
+                        </div>
+
+                        <div class="input-field">
+                            <label for="LOKASI UMKM" class="form-label" style="font-size: 14px;">15. Kabupaten / Kota lokasi usaha</label>
+
+                            <input type="text" id="LOKASI UMKM" class="form-control" name="LOKASI UMKM" placeholder="Ex. Matraman" required>
+                        </div>
+
+                        <div class="input-field">
+                            <label for="KELURAHAN UMKM" class="form-label" style="font-size: 14px;">16. Kelurahan lokasi usaha anda</label>
+
+                            <input type="text" id="KELURAHAN UMKM" class="form-control" name="KELURAHAN UMKM" placeholder="Ex. Utan Kayu" required>
+                        </div>
+
+                        <div class="input-field">
+                            <label for="NIB UMKM" class="form-label" style="font-size: 14px;">17. No NIB anda jika ada, jika tidak ada minta GFORM pendaftaran NIB kepada admin terlebih dahulu dan ketik saja di jawaban " tidak punya nib "</label>
+
+                            <input type="number" id="NIB UMKM" class="form-control" name="NIB UMKM" placeholder="No NIB" required>
+                        </div>
+
+                        <div class="input-field">
+                            <label for="LOGIN OSS UMKM" class="form-label" style="font-size: 14px;">18. Informasi Login OSS anda untuk KBLI NIB 
+                            ( Username & Password ) jika belum ada jawab saja " belum memiliki NIB "</label>
+
+                            <input type="text" id="LOGIN OSS UMKM" class="form-control" name="LOGIN OSS UMKM" placeholder="Login Data" required>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="details family">
+                    <!-- <span class="title">Family Details</span> -->
+
+                    <div class="fields">
+                        <div class="input-field">
+                            <label for="JENIS PRODUKSI UMKM" class="form-label" style="font-size: 14px;">19. Jenis hasil produksi usaha ( yang sedang dijual sekarang )</label>
+
+                            <input type="text" id="JENIS PRODUKSI UMKM" class="form-control" name="JENIS PRODUKSI UMKM" placeholder="Ex. Kue Nastar" required>
+                        </div>
+
+                        <div class="input-field">
+                            <label for="OMSET UMKM" class="form-label" style="font-size: 14px;">20. Perkiraan omset usaha / Bulan</label>
+
+                            <input type="text" id="OMSET UMK" class="form-control" name="OMSET UMKM" placeholder="Ex. Rp 3jt" required>
+                        </div>
+
+                        <div class="input-field">
+                            <label for="FOTO PRODUK" class="form-label" style="font-size: 14px;">21. Upload foto produk anda</label>
+
+                            <input type="file" required id="attach" class="form-control" name="FOTO PRODUK">    
+                        </div>
+
+                        <div class="input-field">
+                            <label for="FOTO PRODUK DENGAN UMKM" class="form-label" style="font-size: 14px;">22. Foto dengan produk anda </label>
+
+                            <input type="file" required id="attach" class="FOTO PRODUK DENGAN UMKM" name="attach">    
+                        </div>
+
+                        <div class="input-field">
+                            <label for="TEMPAT USAHA" class="form-label" style="font-size: 14px;">23. Foto lokasi/tempat usaha anda</label>
+
+                            <input type="file" required id="attach" class="form-control" name="TEMPAT USAHA">    
+                        </div>
+
+                        <div class="input-field">
+                            <label for="BAHAN BAKU" class="form-label" style="font-size: 14px;">24. Informasi seluruh daftar nama bahan baku produk anda beserta merk nya</label>
+
+                            <input type="text" id="BAHAN BAKU" class="form-control" name="BAHAN BAKU" placeholder="Ex. Susu merk Cap Enak" required>
+                        </div>
+
+                         <div class="input-field">
+                            <label for="FOTO LOKASI USAHA UMKM" class="form-label" style="font-size: 14px;">25. Foto lokasi/tempat usaha anda</label>
+
+                             <input type="file" required id="attach" class="form-control" name="FOTO LOKASI USAHA UMKM">  
+                        </div>
+
+                         <div class="input-field">
+                            <label for="USERNAME HALAL" class="form-label" style="font-size: 14px;">26. Username halal dan Password akun halal anda, di isi apabila sudah memiliki akun halal, jika tidak ada jawab saja " tidak ada "</label>
+
+                            <input type="text" id="USERNAME HALAL" class="form-control" name="USERNAME HALAL" placeholder="Ex. halal1 + password6666" required>
+                        </div>
+                    </div>
+
+                    <div class="buttons">
+                        <div class="backBtn">
+                            <i class="uil uil-navigator"></i>
+                            <span class="btnText">Kembali</span>
+                        </div>
+                        
+                        <button class="sumbit" name="submit" type="submit">
+                            <input type="button" class="btnText" target="_top" onclick="UploadFile();" rel="nofollow"/>KIRIM DATA 
+                                <!--without value data-->
+                            <i class="uil uil-navigator"></i>
+                        </button>
+                    </div>
+                </div> 
+            </div>
+        </form>
+    </div>
+    <script src="script.js"></script>
+<!-- 
+    
+    <script
+      src="https://code.jquery.com/jquery-3.6.0.min.js"
+      integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+      crossorigin="anonymous"
+    ></script>
+    <script>
+      var selDiv = "";
+      var storedFiles = [];
+      $(document).ready(function () {
+        $("#img").on("change", handleFileSelect);
+        selDiv = $("#selectedBanner");
+      });
+
+      function handleFileSelect(e) {
+        var files = e.target.files;
+        var filesArr = Array.prototype.slice.call(files);
+        filesArr.forEach(function (f) {
+          if (!f.type.match("image.*")) {
+            return;
+          }
+          storedFiles.push(f);
+
+          var reader = new FileReader();
+          reader.onload = function (e) {
+            var html =
+              '<img src="' +
+              e.target.result +
+              "\" data-file='" +
+              f.name +
+              "alt='Category Image' height='200px' width='100%'>";
+            selDiv.html(html);
+          };
+          reader.readAsDataURL(f);
+        });
+      }
+    </script>
+    </script> -->
+
+    <!-- <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbx_GBphv29QfYj_0W9-NU8dxE3aDychYijFsMmWSKq_0mw4DXzk-Ja1yg5aCzHGLXgs2Q/exec'
+        const form = document.forms['google-sheet']
+        
+        form.addEventListener('submit', e => {
+            e.preventDefault()
+            fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+            .then(response => $("#form_alerts").html("<div class='alert alert-success'>Data berhasil dikirim.</div>"))
+            .catch(error => $("#form_alerts").html("<div class='alert alert-danger'>Data gagal terkirim!.</div>"))
+            form.reset();
+        })
+    </script> -->
+
+
+
+    <script>
+        function UploadFile() {
+    var reader = new FileReader();
+    var file = document.getElementById('attach').files[0];
+    reader.onload = function(){
+    document.getElementById('fileContent').value=reader.result;
+    document.getElementById('filename').value=file.name;
+    document.getElementById('uploadForm').submit();
+    }
+    reader.readAsDataURL(file);
+    }
+    </script>
+
+</body>
+</html>

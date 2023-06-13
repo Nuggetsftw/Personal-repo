@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cek Progress Data Sertifikat Halal Anda yang telah Anda Daftarkan di Halalhero.id | Urushalal.co | Urusizin.co</title>
+    <link rel="stylesheet" href="style2.css" />
+  </head>
+  <body>
+    <main>
+      <div class="big-wrapper light">
+        <img src="./img/shape.png" alt="" class="shape" />
+
+        <header>
+          <div class="container">
+            <div class="logo">
+              <img src="https://halalhero.id/images/LogoHHID1.png" alt="Logo" />
+              <h3>Urushalal.co</h3>
+            </div>
+
+            <div class="links">
+              <ul>
+                <li><a href="https://halalhero.id" class="btn">Kembali ke Web</a></li>
+              </ul>
+            </div>
+
+            <div class="overlay"></div>
+
+            <div class="hamburger-menu">
+              <div class="bar"></div>
+            </div>
+          </div>
+        </header>
+
+        <div class="showcase-area">
+          <div class="container">
+            <div class="left">
+              <div class="big-title">
+                <h1>Ragu dan Bingung?</h1>
+                <h1>Tentang Hasil Submit Sertifikat Kemarin?</h1>
+              </div>
+              <p class="text">Langsung Saja cek Data Sertifikat Halalmu Dengan Mengetikkan Nama Asli KTP / NIK dengan (Minimum 3 keywords) Ex. "Sya" untuk "Syafudin" </p>
+              <div class="cta">
+                <a href="#" id="showPopBtn" class="btn">Cek Data</a>
+
+                <!-- popup -->
+                <div id="popup" class="popup">
+                  <iframe src="https://ccccc.halalhero.id/" width="850px" height="500px" frameborder="0"></iframe>
+                  <button id="closePopBtn">Tutup</button>
+                </div>
+              </div>
+            </div>
+
+            <div class="right">
+              <img src="./img/person.png" alt="Person Image" class="person" />
+            </div>
+          </div>
+        </div>
+
+        <div class="bottom-area">
+          <div class="container">
+            <button class="toggle-btn">
+              <i class="far fa-moon"></i>
+              <i class="far fa-sun"></i>
+            </button>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <script>
+      // menambahkan event listener untuk tombol "Cek Data"
+      document.getElementById('showPopBtn').addEventListener('click', function () {
+        // menampilkan popup
+        document.getElementById('popup').style.display = 'block';
+      });
+
+      // menambahkan event listener untuk tombol "Tutup"
+      document.getElementById('closePopBtn').addEventListener('click', function () {
+        // menyembunyikan popup
+        document.getElementById('popup').style.display = 'none';
+      });
+    </script>
+    <!-- JavaScript Files -->
+
+    <script src="https://kit.fontawesome.com/a81368914c.js"></script>
+    <script src="./app.js"></script>
+  </body>
+</html>
