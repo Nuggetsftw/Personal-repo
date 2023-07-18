@@ -1,5 +1,5 @@
 # Personal Project Repository
-Welcome to my personal project repository! This repository contains all the code and resources for my personal project developed by nuggetsftw.
+Welcome to my personal project repository! This repository contains all the code and resources for my personal project developed and modified by nuggetsftw.
 
 ## Project Overview
 The purpose of this project is to [provide a brief overview of the main goal or functionality of the project].
